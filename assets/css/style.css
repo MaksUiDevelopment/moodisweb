@@ -1776,7 +1776,7 @@ hr {
 @media (max-width: 575px) {
     /* Work Card */
     .works_card__item {
-        width: 100%;
+        width: 85%;
     }
     /* Intro */
     .intro__suptitle {
