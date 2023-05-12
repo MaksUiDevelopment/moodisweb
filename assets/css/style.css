@@ -1708,7 +1708,7 @@ hr {
 @media (max-width: 770px) {
     /* Idea */
     .idea__funny_block {
-        width: 100%;
+        width: 560px;
         height: auto;
     }
     /* Work Card */
@@ -1870,6 +1870,9 @@ hr {
 
 @media (max-width: 585px) {
     /* Idea */
+    .idea__funny_block {
+        width: 320px;
+    }
     .idea__img {
         max-height: none;
     }
@@ -1887,7 +1890,7 @@ hr {
         width: 40px;
         height: 5px;
         top: 50%;
-        right: 43%;
+        right: 42.6%;
         background-color: #337AB7;
         transform: rotate(55deg);
     }
