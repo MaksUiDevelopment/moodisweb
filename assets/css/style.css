@@ -1899,7 +1899,7 @@ hr {
         top: 50%;
         right: 36%;
         background-color: #337AB7;
-        box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+        box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
         transform: rotate(-55deg);
     }
     /* Work Card */
