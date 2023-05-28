@@ -60,19 +60,19 @@ hr {
 .intro {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     width: 100%;
     height: 100vh;
     min-height: 820px;
     position: relative;
 
-    background-image: linear-gradient(90deg, rgba(238, 185, 96, 1) 0%, rgba(224, 159, 92, 0) 41%, rgba(207, 127, 87, 0) 57%, rgba(194, 104, 83, 1) 100%), url("../images/intro.jpeg");
+    background-image: url("../images/intro.jpg");
     -webkit-background-size: cover;
     background-size: cover;
 
 }
 
 .intro__inner {
+    margin-top: -100px;
     width: 100%;
     max-width: 880px;
     margin: 0 auto;
@@ -82,7 +82,7 @@ hr {
 
 .intro__title {
     color: #ffe733;
-    font-size: 150px;
+    font-size: 120px;
     font-weight: 700;
     text-transform: uppercase;
     line-height: 1;
@@ -93,7 +93,7 @@ hr {
     display: block;
     width: 60px;
     height: 3px;
-    margin: 60px auto;
+    margin: 0px auto;
 
     background-color: #ffe733;
 }
@@ -596,6 +596,11 @@ hr {
     text-align: center;
 }
 
+.section__works {
+    background-color: #e6e6e6;
+    padding: 0;
+}
+
 .section__suptitle {
     font-family: 'Amatic SC', cursive;
     font-weight: 700;
@@ -621,8 +626,8 @@ hr {
 }
 
 .section__text {
-    font-size: 15px;
-    color: #999;
+    font-size: 18px;
+    color: #454545;
 }
 
 .team-section {
@@ -868,9 +873,6 @@ hr {
     text-align: right;
 }
 
-
-.interesting-idea {}
-
 .interesting-idea__img {
     box-shadow: 5px 5px 15px 1px rgba(0, 0, 0, 0.333);
     border-radius: 5px;
@@ -948,7 +950,26 @@ hr {
     transform: translateY(-50%) rotate(-45deg);
     margin-top: 5px;
 }
-
+.logotip-img {
+    display: none;
+}
+.accordion-img_1,.accordion-img_2,.accordion-img_3 {
+    display: none;
+}
+.accordion-img_1.active {
+    display: block;
+}
+.accordion-img_2.active {
+    display: block;
+}
+.accordion-img_3.active {
+    display: block;
+}
+.img-modal__block {
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+}
 .accordion__header {
     padding: 15px 20px 15px 65px;
     position: relative;
@@ -1196,6 +1217,23 @@ hr {
 .works__col {
     flex: 1 1 0;
     height: 800px;
+}
+
+
+.works__col_video {
+    width: 50%;
+    height: 100%;
+}
+
+.works__iteem {
+    width: 50%;
+    height: 800px;
+    background: #000;
+}
+
+.video {
+    width: 100%;
+    height: 100%;
 }
 
 .works__item {
@@ -1667,7 +1705,59 @@ hr {
 }
 
 
-@media (max-width: 1230px) {
+.maps {
+    display: none;
+}
+
+
+.maps.active {
+    display: block;
+    display: flex;
+    font-weight: 600;
+    font-size: 22px;
+    text-align: center;
+    transition: all 0.3s ease 0.2s;
+}
+
+.maps img {
+    display: block;
+    margin: 0 auto;
+}
+
+.maps.active.modal-window1 {
+    background: #fefefe;
+    border: #333 solid 1px;
+    border-radius: 5px;
+    position: absolute;
+    left: 15%;
+    top: -100%;
+    z-index: 11;
+    width: 460px;
+    transform: translate(0, -500%);
+    transition: transform 0.3s ease-out;
+}
+
+@media (max-width: 1260px) {
+
+    /* Works */
+    .works__image {
+        height: 300px;
+    }
+
+    .works__col {
+        height: 600px;
+    }
+
+    .works-col-image {
+        height: 600px;
+    }
+
+    .works__iteem {
+        width: 50%;
+        height: 600px;
+        background: #000;
+    }
+
 
     /* Idea */
     .idea__img {
@@ -1696,6 +1786,7 @@ hr {
         width: 33.333333%;
     }
 }
+
 
 @media (max-width: 990px) {
 
@@ -1760,6 +1851,17 @@ hr {
         border-bottom: 0;
     }
 
+    /* Works */
+    .works {
+        flex-wrap: wrap;
+    }
+
+    .works__col {
+        flex: none;
+        width: 50%;
+        height: 600px;
+    }
+
     /* Reviews */
     .reviews .slick-slider {
         padding: 0 60px;
@@ -1822,6 +1924,10 @@ hr {
     /* Work Card */
     .works_card__item {
         width: 50%;
+    }
+
+    .works__iteem {
+        width: 100%;
     }
 
     /* Intro */
@@ -1947,16 +2053,6 @@ hr {
 
     .reviews__author {
         font-size: 20px;
-    }
-
-    /* Works */
-    .works {
-        flex-wrap: wrap;
-    }
-
-    .works__col {
-        flex: none;
-        width: 50%;
     }
 
     /* Blog */
@@ -2114,6 +2210,11 @@ hr {
         width: 100%;
     }
 
+    .works_card__img {
+        margin: 0 auto;
+        width: 80%;
+    }
+
 
     /* Clients */
     .clients__photo {
@@ -2167,5 +2268,10 @@ hr {
 
     .wedo__img_1 {
         height: 300px;
+    }
+
+    /* Works Card */
+    .works_card__img {
+        width: 100%;
     }
 }

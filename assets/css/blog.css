@@ -53,14 +53,9 @@ hr {
 .modall:hover {
    scale: 1.2;
 }
-.modal-img  {
-   width: 200px;
-   height: 120px;
-   margin: 0 auto;
-}
+
 .modal-body {
    padding: 20px;
-   font-size: 15px;
 }
 
 .modal-header,
@@ -79,6 +74,12 @@ hr {
 .modal-footer {
    border-top: #eee solid 1px;
    text-align: right;
+}
+
+.modal-img {
+   width: 200px;
+   height: 120px;
+   margin: 0 auto;
 }
 
 /* .modal:before {
@@ -122,7 +123,7 @@ hr {
    -webkit-transform: translate(0, 0);
    -ms-transform: translate(0, 0);
    transform: translate(0, 0);
-   top: 20%;
+   top: 15%;
 }
 
 .btn {
