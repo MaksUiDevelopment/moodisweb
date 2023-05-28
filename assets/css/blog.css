@@ -216,3 +216,33 @@ hr {
    box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
    transform: rotate(-45deg);
 }
+
+
+.accordion-img_1,
+.accordion-img_2,
+.accordion-img_3 {
+   display: none;
+}
+
+
+.accordion-img_1.active .stock {
+   display: none;
+}
+
+.accordion-img_1.active {
+   display: block;
+}
+
+.accordion-img_2.active {
+   display: block;
+}
+
+.accordion-img_3.active {
+   display: block;
+}
+
+.img-modal__block {
+   text-align: center;
+   display: block;
+   margin: 0 auto;
+}

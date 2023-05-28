@@ -49,21 +49,11 @@ $(function () {
         $(this).toggleClass("active");
         $("#nav").toggleClass("active");
     });
-    $(".accordion_1").on("click", function (event) {
-        event.preventDefault();
 
-        $(".accordion-img_1").toggleClass("active");
-    });
-    $(".accordion_2").on("click", function (event) {
-        event.preventDefault();
 
-        $(".accordion-img_2").toggleClass("active");
-    });
-    $(".accordion_3").on("click", function (event) {
-        event.preventDefault();
 
-        $(".accordion-img_3").toggleClass("active");
-    });
+
+
     $(".open-map__button").on("click", function (event) {
         event.preventDefault();
 

@@ -950,26 +950,9 @@ hr {
     transform: translateY(-50%) rotate(-45deg);
     margin-top: 5px;
 }
-.logotip-img {
-    display: none;
-}
-.accordion-img_1,.accordion-img_2,.accordion-img_3 {
-    display: none;
-}
-.accordion-img_1.active {
-    display: block;
-}
-.accordion-img_2.active {
-    display: block;
-}
-.accordion-img_3.active {
-    display: block;
-}
-.img-modal__block {
-    text-align: center;
-    display: block;
-    margin: 0 auto;
-}
+
+
+
 .accordion__header {
     padding: 15px 20px 15px 65px;
     position: relative;
