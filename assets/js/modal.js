@@ -1,18 +1,21 @@
 $(".accordion_1").on("click", function () {
 
-   $("#accordion-img_1").toggleClass("active");
+   $(".accordion-block_1").toggleClass("active");
+   $(".logotip").toggleClass("stock")
 });
 
 
 
 $(".accordion_2").on("click", function () {
 
-   $("#accordion-img_2").toggleClass("active");
+   $(".accordion-block_2").toggleClass("active");
+   $(".logotip").toggleClass("stock")
 });
 
 
 
 $(".accordion_3").on("click", function () {
 
-   $("#accordion-img_3").toggleClass("active");
+   $(".accordion-block_3").toggleClass("active");
+   $(".logotip").toggleClass("stock")
 });
