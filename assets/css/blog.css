@@ -1,251 +1,177 @@
-/* Page */
-.page {
-   overflow: hidden;
+/* ------------------------ Scan Qr Code ------------------------- */
+/* .block-text {
+   
+} */
+.block-text-center {
+   text-align: center;
 }
 
-
-/* Container */
-.container {
-   width: 100%;
-   max-width: 1230px;
-   padding: 0 15px;
-   margin: 0 auto;
+.weight-text {
+   font-size: 16px;
+   font-weight: 700;
 }
 
-body,
-a {
-   color: #333;
-   text-decoration: none;
-   font-family: 'Helvetica', arial;
+.form-text {
+   color: #000;
+   font-weight: 500;
 }
 
-
-hr {
-   clear: both;
-   margin-top: 40px;
-   margin-bottom: 40px;
-   border: 0;
-   border-top: 1px solid #aaa;
+.block-text__title {
+   font-weight: 700;
+   font-size: 44px;
+   line-height: 126%;
+   color: #000
 }
 
-h1 {
-   font-size: 30px;
-   margin-bottom: 40px;
+.block-text__title:not(:last-child) {
+   margin: 0px 0px 12px 0px;
 }
 
-p {
-   margin-bottom: 20px;
+.block-text__title span {
+   color: #e8780f;
 }
 
-hr {
-   margin-top: 0;
+.block-text__title-blue span {
+   color: #4285f4;
 }
 
-.modall {
-   display: flex;
-   font-weight: 600;
-   font-size: 22px;
-   justify-content: flex-start;
-   flex-direction: row-reverse;
-   transition: all 0.3s ease 0.2s;
-}
-
-.modall:hover {
-   scale: 1.2;
-}
-
-.modal-body {
-   padding: 20px;
-}
-
-.modal-header,
-.modal-footer {
-   padding: 10px 20px;
-}
-
-.modal-header {
-   border-bottom: #eee solid 1px;
-}
-
-.modal-header h2 {
+.block-text__text {
    font-size: 20px;
+   line-height: 138.5%;
 }
 
-.modal-footer {
-   border-top: #eee solid 1px;
-   text-align: right;
-}
-
-.modal-img {
-   width: 200px;
-   height: 120px;
+.block-text__text-mw {
+   max-width: 630px;
    margin: 0 auto;
 }
 
-/* .modal:before {
-   content: "";
-   display: none;
-   position: fixed;
-   top: 0;
-   left: 0;
-   right: 0;
-   bottom: 0;
-   z-index: 10;
-} */
-/* 
-.modal:target:before {
-   display: block;
-} */
-
-.modal:target {
-   display: block;
+.block-text__text:not(:last-child) {
+   margin-bottom: 24px;
 }
 
-.modal-dialog {
-   background: #fefefe;
-   border: #333 solid 1px;
-   border-radius: 5px;
-   position: fixed;
-   left: 15%;
-   top: -100%;
-   z-index: 11;
-   width: 460px;
-   -webkit-transform: translate(0, -500%);
-   -ms-transform: translate(0, -500%);
-   transform: translate(0, -500%);
-   -webkit-transition: -webkit-transform 0.3s ease-out;
-   -moz-transition: -moz-transform 0.3s ease-out;
-   -o-transition: -o-transform 0.3s ease-out;
-   transition: transform 0.3s ease-out;
-}
-
-.modal:target .modal-dialog {
-   -webkit-transform: translate(0, 0);
-   -ms-transform: translate(0, 0);
-   transform: translate(0, 0);
-   left: 30%;
-   top: 15%;
-}
-
-.btn {
-   background: #428bca;
-   border: #357ebd solid 1px;
-   border-radius: 3px;
-   color: #fff;
-   display: inline-block;
-   font-size: 14px;
-   padding: 8px 15px;
-   text-decoration: none;
-   text-align: center;
-   min-width: 60px;
-   position: relative;
-   transition: color .1s ease;
-   /* top: 40em;*/
-}
-
-.btn:hover {
-   background: #357ebd;
-}
-
-.btn.btn-big {
-   font-size: 18px;
-   padding: 15px 20px;
-   min-width: 100px;
-}
-
-.btn-big {
-   margin-top: 24px;
-}
-
-.btn-close {
-   color: #aaa;
-   font-size: 30px;
-   text-decoration: none;
-   position: absolute;
-   left: 5px;
-   top: 0;
-}
-
-.btn-close:hover {
-   color: #919191;
-}
-
-/*добавляем, чтобы остановить прокручивание вверх*/
-#close {
-   display: none;
-}
-
-/* Arrow */
-.arrow-1 {
+.block-text__button {
+   text-transform: uppercase;
    cursor: pointer;
-   position: relative;
-   width: 80px;
-   height: 50px;
-   margin: 20px;
 }
 
-.arrow-1 div {
-   position: relative;
-   top: 20px;
-   width: 55px;
-   height: 4px;
-   background-color: #000;
-   box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
-   left: -8px;
-   display: block;
+@media (max-width: 767.98px) {
+   .block-text__title {
+      font-size: 34px;
+   }
 }
 
-.arrow-1 div::after {
-   content: '';
-   position: absolute;
-   width: 25px;
-   height: 3px;
-   top: 9px;
-   left: -4px;
-   background-color: #000;
-   transform: rotate(45deg);
+/* CtaySafe */
+.qrcode {
+   display: flex;
+   justify-content: center;
+   padding: 80px 0;
+   height: 100vh;
 }
 
-.arrow-1 div::before {
-   content: '';
-   position: absolute;
-   width: 25px;
-   height: 3px;
-   top: -7.7px;
-   left: -4px;
-   background-color: #000;
-   box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
-   transform: rotate(-45deg);
+.qrcode__container {
+   display: flex;
+   gap: 180px;
+   align-items: center;
 }
 
-.stock {
-   display: none;
+/* .qrcode__media {
+    flex: 0 1 50%;
+    padding: 0px 0px 0px 47px;
 }
 
-.accordion-block_1,
-.accordion-block_2,
-.accordion-block_3 {
-   display: none;
-}
+.qrcode__content {
+    flex: 0 1 50%;
+} */
 
-.accordion-block_1.active .stock {
-   display: none;
-}
 
-.accordion-block_1.active {
-   display: block;
-}
-
-.accordion-block_2.active {
-   display: block;
-}
-
-.accordion-block_3.active {
-   display: block;
-}
-
-.img-modal__block {
-   text-align: center;
-   display: block;
+.media-qrcode {
+   width: 373px;
    margin: 0 auto;
+   padding: 56px 0px 27px 0px;
+   text-align: center;
+   position: relative;
+}
+
+.media-qrcode-image {
+   display: inline-block;
+   box-shadow: 2px 4px 32px rgba(0, 0, 0, 0.12);
+   border-radius: 16px;
+   position: relative;
+}
+
+.media-qrcode-image img {
+   border-radius: 15px;
+   position: relative;
+   z-index: 5;
+   max-width: 100%;
+}
+
+.media-qrcode-image::after {
+   content: "";
+   position: absolute;
+   bottom: -12px;
+   left: 12px;
+   width: 90%;
+   height: 27px;
+   z-index: 2;
+   background: rgba(232, 232, 232, 0.49);
+   border-radius: 16px;
+}
+
+.media-qrcode__item {
+   position: absolute;
+   background-color: #e8780f;
+   border-radius: 30px;
+   width: 77px;
+   height: 77px;
+}
+
+.media-qrcode__item-1 {
+   top: 0;
+   left: -25px;
+   width: 147px;
+   height: 147px;
+}
+
+.media-qrcode__item-2 {
+   bottom: 0;
+   left: 13px;
+}
+
+.media-qrcode__item-3 {
+   bottom: 142px;
+   right: 5px;
+}
+
+@media (max-width: 991.98px) {
+   .qrcode {
+      padding: 60px 0;
+   }
+}
+
+@media (min-width: 991.98px) {
+   .qrcode__media {
+      padding: 0px 0px 0px 47px;
+   }
+}
+
+@media (max-width: 767.98px) {
+   .qrcode {
+      display: none;
+      padding: 30px 0;
+   }
+
+   .qrcode__container {
+      flex-direction: column-reverse;
+   }
+
+   .qrcode__content {
+      margin: 0px 0px 30px 0px;
+   }
+}
+
+@media (max-width: 479.98px) {
+   .media-qrcode {
+      width: 290px;
+   }
 }
