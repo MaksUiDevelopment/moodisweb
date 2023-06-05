@@ -72,7 +72,8 @@ hr {
 }
 
 .intro__inner {
-    margin-top: -100px;
+    position: relative;
+    top: 40%;
     width: 100%;
     max-width: 880px;
     margin: 0 auto;
@@ -99,7 +100,7 @@ hr {
 }
 
 .intro__suptitle {
-    margin-bottom: 15px;
+    margin-bottom: 55px;
 
     font-family: 'Kaushan Script', cursive;
     font-size: 72px;
@@ -1872,7 +1873,7 @@ hr {
     -ms-transform: translate(0, 0);
     transform: translate(0, 0);
     left: 30%;
-    top: 15%;
+    top: 8%;
 }
 
 .btn {
