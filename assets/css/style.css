@@ -1452,12 +1452,16 @@ hr {
 }
 
 .maps__text p {
-    width: 300px;
+    width: 600px;
 }
 
 .maps__img {
     margin-bottom: 30px;
     width: 100%;
+}
+.maps__img img {
+    height: 500px;
+    width: 300px;
 }
 
 .map__title {
@@ -2176,7 +2180,9 @@ hr {
 }
 
 @media (max-width: 770px) {
-
+    .maps__text p {
+        width: 300px;
+    }
     /* Modal-dialog */
     .modal:target .modal-dialog {
         left: 10%;
